@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <fieldset>
+        <legend>Personal information:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" name="fname" value="John" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" name="lname" value="Doe" /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+    <br /><hr>
+    <p>What is your favorite browser?</p>
+    <form action="/action_page.php">
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+      <button type="submit">Submit</button>
+    </form>
+    <br /><hr>
+    <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" value="50" name="a"/>
+        100 +
+        <input type="number" id="b" value="50" name="b"/>
+        =
+        <output name="x" for="a b">100</output>
+        <br><br>
+        <input type="submit">
+    </form>
+    <br><hr>
+    
+  </body>
+</html>

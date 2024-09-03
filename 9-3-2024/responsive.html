@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <h2 style="width: 50vw">
+      Show different images depending on browser width
+    </h2>
+    <p>Resize the browser window to see how the image changes.</p>
+    <picture>
+      <source media="(max-width: 600px)" srcset="inception.jpg" />
+      <source media="(max-width: 1500px)" srcset="godfather.jpg" />
+      <img src="godfather.jpg" alt="Godfather Movie" style="width: auto" />
+    </picture>
+  </body>
+</html>
