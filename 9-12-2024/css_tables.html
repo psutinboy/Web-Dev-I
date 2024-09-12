@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS Tables</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+      }
+      table {
+        width: 100%;
+        overflow-x: auto;
+      }
+      th {
+        background-color: lightgray;
+      }
+      tr:nth-child(even) {
+        background-color: #d2bcbc65;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>full width table</h2>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+      </tr>
+      <tr>
+        <td>Peter</td>
+        <td>Griffin</td>
+      </tr>
+      <tr>
+        <td>Lois</td>
+        <td>Griffin</td>
+      </tr>
+      <tr>
+        <td>Joe</td>
+        <td>Swanson</td>
+      </tr>
+      <tr>
+        <td>Cleveland</td>
+        <td>Brown</td>
+      </tr>
+      <tr>
+        <td>
+          responsive tables work by adapting to different screen sizes. They can
+          use techniques like horizontal scrolling, stacking columns vertically,
+          and hiding less important columns.
+        </td>
+        <td>
+          Having a responsive table is important for a website to be
+          user-friendly and accessible on all devices.
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
