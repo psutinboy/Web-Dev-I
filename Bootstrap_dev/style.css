@@ -1,15 +1,18 @@
-.hero {
-  padding: 60px 0;
+nav {
+  margin: 0 10px;
 }
 
-.hero h1 {
-  font-size: 3.5rem;
-  font-weight: bold;
+#carouselExampleIndicators {
+  height: 100vh;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  max-width: 800px;
-  margin: 0 auto 30px;
+#carouselExampleIndicators .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.carousel {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
