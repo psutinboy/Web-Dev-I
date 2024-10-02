@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>The window.print() Method</h2>
+    <p>Click the button to print the current page.</p>
+    <button onclick="window.print()">Print this page</button>
+    <hr />
+    <h2>JavaScript Code Block Examples</h2>
+    <p>Click the buttons to see different JavaScript code block results.</p>
+    <p id="demo1">This text will change for Demo 1.</p>
+    <p id="demo2">This text will change for Demo 2.</p>
+    <button onclick="demo1Function()">Demo 1</button>
+    <button onclick="demo2Function()">Demo 2</button>
+
+    <script>
+      function demo1Function() {
+        let currentDate = new Date();
+        document.getElementById("demo1").innerHTML = "Current date and time: " + currentDate;
+      }
+
+      function demo2Function() {
+        let colors = ["Red", "Green", "Blue", "Yellow", "Purple"];
+        let randomColor = colors[Math.floor(Math.random() * colors.length)];
+        document.getElementById("demo2").innerHTML = "Random color: " + randomColor;
+        document.getElementById("demo2").style.color = randomColor.toLowerCase();
+      }
+    </script>
+
+    <hr />
+  </body>
+</html>

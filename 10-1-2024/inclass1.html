@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function myFunction() {
+          document.getElementById('demo2').innerHTML = 'Paragraph changed.';
+      }
+  </script>
+</head>
+<body>
+    <h2>What can javascript do?</h2>
+    <p id="demo">Javascript can change HTML content.</p>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello Javascript!'">Click me!</button>
+    <hr>
+    <h2>Javascript in the head</h2>
+    <p id="demo2">A paragraph.</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+</body>
+</html>
