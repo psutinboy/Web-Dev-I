@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function emp(id, name, salary) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.changeSalary = function (otherSalary) {
+          this.salary = otherSalary;
+        };
+      }
+      var e = new emp(103, "John", 5000);
+      document.write(e.id + " " + e.name + " " + e.salary);
+      e.changeSalary(6000);
+      document.write("<br>" + e.id + " " + e.name + " " + e.salary);
+    </script>
+  </body>
+</html>

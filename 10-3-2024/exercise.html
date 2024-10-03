@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Changer</title>
+  </head>
+  <body>
+    <h1>Click the image to turn the bulb on and off!</h1>
+
+    <img
+      id="changeableImage"
+      src="images/pic_bulbon.gif"
+      alt="Changeable Image"
+      onclick="changeImage()"
+    />
+
+    <script>
+      let isBulbOn = true;
+
+      function changeImage() {
+        const image = document.getElementById("changeableImage");
+        if (isBulbOn) {
+          image.src = "images/pic_bulboff.gif";
+          isBulbOn = false;
+        } else {
+          image.src = "images/pic_bulbon.gif";
+          isBulbOn = true;
+        }
+      }
+    </script>
+  </body>
+</html>
