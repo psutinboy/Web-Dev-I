@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Prompt Demo</title>
+</head>
+<body>
+    <h1>Click the button to demonstrate the prompt</h1>
+    <button onclick="askName()">Click me!</button>
+    <p id="greeting"></p>
+
+    <script>
+        function askName() {
+            var name = window.prompt("Please enter your name:");
+            if (name !== null && name !== "") {
+                document.getElementById("greeting").innerHTML = "Hello " + name + "! How are you today?";
+            }
+        }
+    </script>
+</body>
+</html>
