@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function validateEmail() {
+        var x = document.myform.email.value;
+        var atpos = x.indexOf("@");
+        var dotpos = x.lastIndexOf(".");
+        if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+          alert("Please enter a valid email address");
+          return false;
+        } else {
+        }
+      }
+    </script>
+    <form
+      name="myform"
+      action="inclass3.html"
+      onsubmit="return validateEmail()"
+      method="post"
+    >
+      Email: <input type="text" name="email" /><br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
