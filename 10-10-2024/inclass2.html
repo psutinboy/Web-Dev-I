@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>addeventlistener</title>
+  </head>
+  <body>
+    <p>example of the addEventListener() method</p>
+    <p>click the button to see the effect</p>
+    <button id="btn">click me</button>
+    <p id="para"></p>
+    <script>
+      document.getElementById("btn").addEventListener("click", fun);
+
+      function fun() {
+        document.getElementById("para").innerHTML =
+          "hello world" + "<br>" + "Welcome to Javascript";
+      }
+    </script>
+  </body>
+</html>
