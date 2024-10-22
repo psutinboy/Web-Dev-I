@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <h1>Hello</h1>
+
+    <input type="checkbox">
+
+    <button style="color: red;">Click Me</button>
+
+    <ul>
+      <li class="list" style="color: green;">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="list" style="color: green;">Second</li>
+      <li class="list" style="color: green;">Third</li>
+    </ul>
+
+    <div id="div1">
+      <p id="p1">This is a paragraph</p>
+      <p id="p2">This is another paragraph</p>
+    </div>
+
+    <script>
+    var para = document.createElement("p");
+    var node = document.createTextNode("This is new");
+    para.appendChild(node);
+    var element = document.getElementById("div1");
+    element.appendChild(para);
+    </script>
+    
+
+  </body>
+
+</html>
